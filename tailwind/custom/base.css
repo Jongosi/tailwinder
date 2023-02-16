@@ -1,0 +1,155 @@
+/**
+ * Custom styles to immediately follow Tailwind’s `base` layer
+ *
+ * “Add things like base typography styles [or] opinionated global resets.”
+ *
+ * — from https://tailwindcss.com/docs/plugins#adding-base-styles
+ */
+
+/**
+ * This uses the background and foreground colors declared in the
+ * `theme.json` file and is applied both to the frontend and in the block
+ * editor.
+*/
+body {
+	@apply bg-background text-foreground font-sans;
+}
+
+header#masthead {
+	@apply relative mx-auto px-6 py-6 flex items-center justify-between md:space-x-10 bg-white;
+}
+
+header#masthead .custom-logo {
+	@apply w-auto sm:h-10 h-8;
+}
+
+header#masthead a {
+	@apply text-base font-medium text-gray-500 hover:text-gray-900;
+}
+
+#mobile-menu .custom-logo {
+	@apply w-auto sm:h-10 h-8;
+}
+
+#primary-menu-mobile a {
+	@apply -mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10;
+}
+
+#mobile-menu .menu-tertiary-container {
+	@apply mb-4 py-4;
+}
+
+#tertiary-menu-mobile li {
+	@apply my-2;
+}
+
+#tertiary-menu-mobile a {
+	@apply flex w-full items-center justify-center px-4 py-2;
+}
+
+#tertiary-menu .cta-button a,
+#tertiary-menu-mobile .cta-button a {
+	@apply whitespace-nowrap rounded-md border border-transparent px-4 py-2 text-base font-medium text-white hover:text-white shadow-sm bg-lime-600 hover:bg-lime-700;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	@apply tracking-tight font-bold text-gray-900
+}
+
+.entry-content h1 {
+	@apply text-4xl sm:text-6xl mb-6
+}
+
+.entry-content h2 {
+	@apply text-2xl sm:text-4xl mb-4;
+}
+
+.entry-content h3 {
+	@apply text-xl sm:text-3xl mb-2;
+}
+
+.entry-content p {
+	@apply mt-6 max-w-xl mx-auto text-lg leading-8 text-gray-600
+}
+
+.entry-content .wp-block-group {
+	@apply px-6 lg:px-8;
+}
+
+.entry-content .wp-block-group {
+	@apply flex flex-col justify-center;
+}
+
+.entry-content .wp-block-group.card .wp-block-columns {
+	@apply !items-center;
+}
+
+.entry-content .wp-block-group.card.right .wp-block-columns {
+	@apply flex-row-reverse;
+}
+
+.entry-content .wp-block-group.card .wp-block-column:first-child {
+	@apply relative block rounded-lg shadow-lg px-6 pt-12 pb-6 md:px-12;
+}
+
+.entry-content .wp-block-group.card .wp-block-column:last-child {
+	@apply md:mb-12 lg:mb-0;
+}
+
+.entry-content .wp-block-group.card .wp-block-column:last-child img {
+	@apply mx-auto rounded-lg shadow-lg md:rounded-none md:shadow-none;
+}
+
+.entry-content .wp-block-group.card ul {
+	@apply flex flex-wrap mt-4;
+}
+
+.entry-content .wp-block-group.card ul li {
+	@apply flex items-center justify-center w-1/3 py-2 text-base;
+}
+
+.entry-content .wp-block-group.card p,
+.entry-content .wp-block-group.card sup,
+.entry-content .wp-block-group.card small {
+	@apply text-gray-500 text-base;
+}
+
+.entry-content .wp-block-group.card sup {
+	@apply text-red-500 font-bold;
+}
+
+.entry-content .wp-block-group.card small {
+	@apply italic;
+}
+
+.entry-content .wp-block-buttons {
+	@apply mt-8 gap-x-6;
+}
+
+.entry-content .wp-block-buttons a.wp-block-button__link {
+	@apply bg-lime-600 hover:bg-lime-700 font-semibold text-white;
+}
+
+section.pagesection {
+	@apply mx-auto px-6 py-20 lg:px-8 lg:py-32;
+}
+
+section.page-subsection {
+	@apply mx-auto px-6 pt-16 lg:px-8 lg:pt-24;
+}
+
+figure.alignfull {
+	@apply px-6 lg:px-8;
+}
+
+figure.alignfull img {
+	@apply shadow-lg;
+}
+
+footer.entry-footer {
+	@apply -mb-20 text-center py-8 bg-lime-100;
+}
+
+#sidebar-1 img {
+	@apply mb-4 h-8 w-auto sm:h-10;
+}
