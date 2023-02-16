@@ -1,7 +1,7 @@
 TailWinder
 ========
 
-Theme for the TailWinder brochure website
+A tailwindcss starter theme for WordPress.
 
 ## Installation
 
